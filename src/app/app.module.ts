@@ -10,15 +10,15 @@ import { ProductModule } from './products/product.module';
 @NgModule({
   declarations: [
     AppComponent,
-    WelcomeComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot([
-      {path: 'welcome', component: WelcomeComponent},
-      {path: '', redirectTo: 'welcome', pathMatch: 'full'},
-      {path: '**', redirectTo: 'welcome', pathMatch: 'full'}
+      { path: 'welcome', component: WelcomeComponent },
+      { path: '', redirectTo: 'welcome', pathMatch: 'full' },
+      { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
     ]),
     ProductModule
   ],
