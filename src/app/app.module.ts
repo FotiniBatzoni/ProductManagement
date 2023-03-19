@@ -15,12 +15,13 @@ import { ProductModule } from './products/product.module';
   imports: [
     BrowserModule,
     HttpClientModule,
+    ProductModule,
     RouterModule.forRoot([
       { path: '', redirectTo: 'welcome', pathMatch: 'full' },
       { path: 'welcome', component: WelcomeComponent },
       { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
     ]),
-    ProductModule
+
   ],
   bootstrap: [ AppComponent ]
 })
